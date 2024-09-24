@@ -13,18 +13,18 @@ import javax.transaction.Transactional;
 import java.util.Arrays;
 import java.util.HashSet;
 
-@Component
+//@Component
 public class Init {
 
-    @Autowired
+    //@Autowired
     private RoleRepository roleRepository;
-    @Autowired
+    //@Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
-    @Autowired
+    //@Autowired
     private UserRepository userRepository;
 
-    @PostConstruct
-    @Transactional
+    //@PostConstruct
+    //@Transactional
     public void init() {
         // Создание ролей
         Role userRole = new Role("ROLE_USER");
